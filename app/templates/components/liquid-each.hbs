@@ -1,0 +1,9 @@
+{{#each attrs.collection as |el|}}
+  {{#if customItemWrapper}}
+    {{yield el this}}
+  {{else}}
+    {{#liquid-each-item item=el keyName=keyName keyValue=keyValue parent=this as |el|}}
+      {{yield el this}}
+    {{/liquid-each-item}}
+  {{/if}}
+{{/each}}

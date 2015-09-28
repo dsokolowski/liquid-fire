@@ -84,8 +84,7 @@ export default function explodeCollection(opts={}) {
     oldEl.dom.css({
       position: 'absolute',
       top: oldEl.offset.top - offsetTopAdjustment + 'px',
-      left: oldEl.offset.left - offsetLeftAdjustment + 'px',
-      zIndex: 3000
+      left: oldEl.offset.left - offsetLeftAdjustment + 'px'
     });
     container.append(oldEl.dom);
   });

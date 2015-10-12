@@ -12,6 +12,7 @@ export default Ember.Component.extend(LiquidEachItemMixin, {
   keyValue: null,
 
   didRender: function() {
+    this._super();
     this._setKeyAttribute();
   },
 

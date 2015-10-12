@@ -17,6 +17,7 @@ export default Ember.Component.extend({
   transitionMap: Ember.inject.service('liquid-fire-transitions'),
 
   didRender: function(){
+    this._super();
     this._canAnimate = true;
   },
 

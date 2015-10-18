@@ -1,12 +1,10 @@
 import Ember from 'ember'
 
-export default Ember.Component.extend({
+var liquidEach = Ember.Component.extend({
 
   classNames: ['liquid-each'],
 
   name: 'liquid-each',
-
-  positionalParams: ['collection'],
 
   customItemWrapper: false,
 
@@ -125,3 +123,9 @@ var ChildrenArray = Ember.ArrayProxy.extend({
         });
   }
 })
+
+liquidEach.reopenClass({
+  positionalParams: ['collection']
+})
+
+export default liquidEach
